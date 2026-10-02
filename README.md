@@ -15,6 +15,7 @@
 Сборка — webpack (dist/bundle.js + index.html).
 
 Структура
+```
 src/
 ├── index.tsx            точка входа, ищет <div id="root"> в index.html
 ├── App.tsx              состояние + обработчики add/toggle/delete
@@ -26,6 +27,7 @@ src/
     ├── TodoItem.tsx     одна задача: чекбокс, текст, кнопка удаления
     ├── TodoStats.tsx    три счётчика
     └── index.ts         barrel-реэкспорт
+```
 Данные идут однонаправленно: App владеет массивом todos, передаёт его вниз как пропсы вместе с колбэками, а дети только вызывают onToggle(id) / onDelete(id) — то есть поднятие состояния наверх, как и задумано в задании про state-machine.
 
 Установка:
