@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.35);
+    }
+    input:focus {
+      background: rgba(255, 255, 255, 0.12) !important;
+      box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.3);
+    }
+    button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+    button:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
